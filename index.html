@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="webfonts/">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+  <div class="header">
+    <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-dark bg-dark m-auto px-5 mb-3">
+      <div class="container w-75">
+        <a class="navbar-brand" href="#"> <i class="fas fa-cloud"></i>
+          Weather <br><span>tagline goes here</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#scrollspyHeading1">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#scrollspyHeading2">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#scrollspyHeading3">Live Cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#scrollspyHeading4">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#scrollspyHeading5">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <form class="find-location mt-5 p-5">
+        <input type="text" placeholder="Find your location..." id="search">
+        <input type="button" value="Find" id="submit">
+      </form>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="inner">
+            <div class="forecast-table">
+              <div class="container">
+                <div class="forecast-container" id="forecast1">
+                  <div class="card border-success mb-3">
+                    <div class="card-header bg-transparent border-success">
+                      <div class="day d-flex justify-content-between text-success" id="day1">Monday <span>17 June</span></div>
+                    </div>
+                    <div class="card-body text-success">
+                      <div class="location" id="location1">Cairo</div>
+                      <div class="degree " id="todayDegree">
+                        <div class="num fs-3 fw-bold">36.9<sup>o</sup>C</div>
+                      </div>
+                      <div class="custom" id="todayCondition">Sunny</div>
+                      <div class="d-flex justify-content-between">
+                       <span id="humidity">  <i class="fas fa-umbrella"></i> 20%</span>
+                        <span id ="wind"> <i class="fas fa-wind"></i>18km/h</span>
+                        <span id="windDirection" > <i class="fas fa-compass"></i> East</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="inner">
+            <div class="forecast-table">
+              <div class="container">
+                <div class="forecast-container" id="forecast2">
+                  <div class="card border-success mb-3">
+                    <div class="card-header bg-transparent border-success">
+                      <div class="day d-flex justify-content-between text-success" id="day2">Tuesday <span>18 June</span></div>
+                    </div>
+                    <div class="card-body text-success">
+                      <div class="location"id="location2">Cairo</div>
+                      <div class="degree" id="tomDegree">
+                        <div class="num fs-3">36.9<sup>o</sup>C</div>
+                      </div>
+                      <div class="custom" id="tomCondition">Sunny</div>
+                      <div class="d-flex justify-content-between">
+                        <span id="humidity2">  <i class="fas fa-umbrella"></i> 20%</span>
+                        <span id ="wind2"> <i class="fas fa-wind"></i>18km/h</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="inner">
+            <div class="forecast-table">
+              <div class="container">
+                <div class="forecast-container" id="forecast3">
+                  <div class="card border-success mb-3">
+                    <div class="card-header bg-transparent border-success">
+                      <div class="day d-flex justify-content-between text-success" id="day3">Wednesday <span>19 June</span></div>
+                    </div>
+                    <div class="card-body text-success">
+                      <div class="location3" id="location3">Cairo</div>
+                      <div class="degree" >
+                        <div class="num fs-3" id="afterTomDegree" >36.9<sup>o</sup>C</div>
+                      </div>
+                      <div class="custom" id="afterTomCondition">Sunny</div>
+                      <div class="d-flex justify-content-between">
+                        <span id="afterTomHumidity">  <i class="fas fa-umbrella"></i> 20%</span>
+                        <span id ="afterTomWind"> <i class="fas fa-wind"></i>18km/h</span>
+                        <span id="windDirection" > <i class="fas fa-compass"></i> East</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="container">
+            <div class="find-location mt-5 p-5">
+              <input type="text" placeholder="Enter Your E.mail for Subscribe..." id="subscribe-email">
+              <input type="button" value="Subscribe" id="subscribe-button">
+            </div>
+          </div>
+        </div>
+        <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

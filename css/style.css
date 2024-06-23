@@ -1,0 +1,57 @@
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../screen-0.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+}
+
+.navbar {
+    background-color: #1e202b;
+    height: 100px;
+}
+
+.nav-link {
+    color: white;
+    border-radius: 30px;
+    border: 2px solid transparent; 
+    padding: 8px 20px; 
+}
+
+
+#search , #subscribe-email {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    background-color: #1e202b;
+    border: none; 
+    height: 60px;
+}
+
+.find-location input[type="button"] {
+    padding: 15px 30px; 
+    border-radius: 30px;
+    background-color: #E88D67;
+    color: white;
+    border: none;
+    cursor: pointer; 
+}
+
+.navbar-brand {
+    color: white;
+    display: inline-block; 
+}
+
+.navbar-brand span {
+    font-size: 12px; 
+    display: block; 
+    margin-top: -5px;
+}
+
+.card{
+    background-color: #FFE4C9;
+}
+.site-footer{
+    background-color: black;
+}
